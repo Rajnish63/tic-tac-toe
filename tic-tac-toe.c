@@ -144,7 +144,7 @@ int check_win(){
 void rival_steps(int *row, int *col){
 	int i,j;
 	//complete an row if only one box is left
-	for (int i = 0; i < 3; ++i)
+	for (i = 0; i < 3; ++i)
 	{
 		if (arr_box[i][0] == arr_box[i][1] && arr_box[i][0] == 2 && arr_box[i][2] == 0)
 			{*row =i;*col=2;return;}
@@ -154,7 +154,7 @@ void rival_steps(int *row, int *col){
 			{*row =i;*col=1;return;}
 	}
 	//complete an column if only one box is left
-	for (int i = 0; i < 3; ++i)
+	for (i = 0; i < 3; ++i)
 	{
 		if (arr_box[0][i] == arr_box[1][i] && arr_box[0][i] == 2 && arr_box[2][i] == 0)
 			{*row =2;*col=i;return;}
