@@ -67,7 +67,10 @@ void data_enter(){
 	--row;
 	--col;
 
-	if (arr_box[row][col] == 0)
+	if(row > 2 || col > 2){
+		printf("Please enter valid numbers between 1-3");
+	}
+	else if (arr_box[row][col] == 0)
 	{
 		arr_box[row][col] = 1;
 	}
